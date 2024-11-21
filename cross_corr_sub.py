@@ -28,8 +28,6 @@ def curv1(i):
   return ret
 
 def cross_corr(x,q):
-#  ser=serial.Serial(port,speed)  #open serial port
-#  time.sleep(1)
   time.sleep(10)
   i=0
   d1=np.empty(0)
@@ -37,8 +35,7 @@ def cross_corr(x,q):
   while True:
     r0=curv0(i)
     r1=curv1(i)
-#    data = [str(val) for val in line2.split(",")]
-    if i<100: # and len(data)==11:
+    if i<100:
       d1=np.append(d1,np.float32(r0))
       d2=np.append(d2,np.float32(r1))
       i=i+1
