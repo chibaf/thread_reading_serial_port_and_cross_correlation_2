@@ -26,6 +26,7 @@ void setup() {
   }
   b[0]=swap;
   }
+  pinMode(13, OUTPUT);
 }
 
 //// print signals
@@ -61,5 +62,8 @@ void loop() {
   Serial.print(",");
   Serial.print("0.0");
   Serial.println();
-  delay(10);
+  digitalWrite(13,1);
+  delay(25);
+  digitalWrite(13,0);
+  delay(25);
 }
