@@ -7,7 +7,6 @@ i=0
 x=0
 y=0
 q =queue.Queue()  # queue which stores a result of a thread
-print("start thread: "+str(i))
 #
 while True:
   if threading.active_count()==1:
