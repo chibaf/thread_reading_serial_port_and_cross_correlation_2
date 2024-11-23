@@ -31,9 +31,9 @@ def cross_corr(x,y,q):
   d1=np.empty(0)
   d2=np.empty(0)
   while True:
-    r0=curv0(i,x)
-    r1=curv1(i,y)
     if i<100:
+      r0=curv0(i,x)
+      r1=curv1(i,y)
       d1=np.append(d1,np.float32(r0))
       d2=np.append(d2,np.float32(r1))
       i=i+1
