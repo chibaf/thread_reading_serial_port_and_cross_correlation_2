@@ -1,13 +1,12 @@
 import numpy as np
 import serial,time
 
-def find_index(c):  # find index of maximum value
-  mc=np.amax(c)
-  for i in range(len(c)):
-    if c[i]==mc:
-      im=i
+def find_index(y):  # find index of maximum value
+  my=np.amax(y)
+  for i in range(len(y)):
+    if y[i]==my:
       break
-  return im
+  return i
   
 def curv0(i,x):
   if 1<=i<25+x:
