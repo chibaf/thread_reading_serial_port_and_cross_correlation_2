@@ -44,6 +44,6 @@ def cross_corr(x,y,q):
       f2=np.conjugate(np.fft.fft(d2))
       ff=f1*f2
       corrf=np.real(np.fft.ifft(ff))*c
-      ix=find_index(corrf)
+      indx=find_index(corrf)
       break
-  q.put(ix)
+  q.put(indx)
