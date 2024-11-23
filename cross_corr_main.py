@@ -5,9 +5,9 @@ import random
 import cross_corr_sub
 
 i=0
-q =queue.Queue()  # queue which stores a result of a thread
 x=0
 y=0
+q =queue.Queue()  # queue which stores a result of a thread
 print("start thread: "+str(i))
 #th.join()
 while True:
@@ -15,7 +15,7 @@ while True:
     if i>0:
       indx = q.get()
       print(indx)
-    if i>11:
+    if i>=10:
       break;
     x=random.randint(-5,5)
     y=random.randint(-5,5)

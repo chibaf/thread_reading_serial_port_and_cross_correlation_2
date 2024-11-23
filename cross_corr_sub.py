@@ -11,21 +11,21 @@ def find_index(c):  # find index of maximum value
   
 def curv0(i,x):
   if 1<=i<25+x:
-    ret=0
+    val=0.
   elif 25+x<=i<35+x:
-    ret=np.sin((i-25)*np.pi/10.)
+    val=np.sin((i-25)*np.pi/10.)
   else:
-    ret=0.
-  return ret
+    val=0.
+  return val
   
 def curv1(i,x):
   if 0<=i<55+x:
-    ret=0
+    val=0
   elif 55+x<=i<65+x:
-    ret=np.sin((i-55)*np.pi/10.)
+    val=np.sin((i-55)*np.pi/10.)
   else:
-    ret=0.
-  return ret
+    val=0.
+  return val
 
 def cross_corr(x,y,q):
   i=0
