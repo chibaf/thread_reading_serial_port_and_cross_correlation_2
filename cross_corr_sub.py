@@ -1,5 +1,4 @@
 import numpy as np
-import serial,time
 
 def find_index(y):  # find index of maximum value
   my=np.amax(y)
