@@ -1,15 +1,14 @@
 import threading
-import queue,time
-import serial,sys
+import queue
 import random
 import cross_corr_sub
-
+#
 i=0
 x=0
 y=0
 q =queue.Queue()  # queue which stores a result of a thread
 print("start thread: "+str(i))
-#th.join()
+#
 while True:
   if threading.active_count()==1:
     if i>0:
